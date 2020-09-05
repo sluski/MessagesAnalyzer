@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efb63fa1-8a38-40e5-9bf9-3981db8860f0" name="Default Changelist" comment="" />
+    <list default="true" id="efb63fa1-8a38-40e5-9bf9-3981db8860f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/JavaFxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/JavaFxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +17,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -33,9 +43,11 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -65,6 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599310759544</updated>
       <workItem from="1599310773745" duration="1493000" />
+      <workItem from="1599312509043" duration="2444000" />
     </task>
     <servers />
   </component>
@@ -72,38 +85,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599312268690">
+    <state x="700" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599313157584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599312268690" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599312268690">
+    <state x="700" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599313157584" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599314961826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599312268690" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599312268690">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599314961826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599312268690" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599312268690">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599314961826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599312268690" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1599312268691">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599314961826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599312268691" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1599312268691">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1599314961827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599312268691" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1599312268690">
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961827" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1599314961827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599312268690" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1599312268691">
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961827" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1599314961826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599312268691" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1599314961827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961827" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1599311717840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -112,6 +129,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599311107817" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1599314089102">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314089102" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

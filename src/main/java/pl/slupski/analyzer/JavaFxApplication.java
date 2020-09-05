@@ -30,9 +30,10 @@ public class JavaFxApplication extends Application {
     @Override
     public void start(Stage stage) {
         FxWeaver fxWeaver = applicationContext.getBean(FxWeaver.class);
-        Parent root = fxWeaver.loadView(AnalyzerConfig.class);
+        Parent root = fxWeaver.loadView(FXMLController.class);
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Messages Analyzer");
         stage.show();
     }
 
