@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.security.InvalidParameterException;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -36,85 +37,29 @@ public class DataExtractor {
     }
 
     private static List<Message> extractData(Document doc) {
+        String language = findLanguage(doc);
         List<Element> elements = doc.select(".pam");
         if (elements.get(0).text().contains(",")) elements = elements.subList(1, elements.size());
-        return elements.stream().map(element -> prepareMessage(element)).collect(Collectors.toList());
+        return elements.stream().map(element -> prepareMessage(element, language)).collect(Collectors.toList());
     }
 
-    private static Message prepareMessage(Element element) {
-        String[] splited = element.child(2).text().split(",");
-        if (splited[2].trim().length() < 8) splited[2] = "0" + splited[2].trim();
-        String day = splited[0].split(" ")[1];
-        String date = (day.length() == 2 ? day : "0" + day) + "-" + monthNameToCalendar(splited[0].split(" ")[0]) + "-" + splited[1].trim();
-        String time = to24Format(splited[2].trim());
-        String user = element.child(0).text();
-        String content = element.child(1).text();
-        return new Message(user, date, time, content);
+    private static String findLanguage(Document doc) {
+        String home = doc.select("._2s24").get(0).text();
+        if (home.trim().equals("Home")) return "en";
+        else if (home.trim().equals("Strona główna")) return "pl";
+        return "unsupported";
     }
 
-    private static String to24Format(String time) {
+    private static Message prepareMessage(Element element, String lang) {
         try {
-            DateFormat f = new SimpleDateFormat("hh:mm aa");
-            DateFormat fd = new SimpleDateFormat("HH:mm");
-            Date d = f.parse(time);
-            return fd.format(d);
-        } catch (Exception ex) {
-            return "";
+            String tempDate;
+            tempDate = RegionalDateConverter.convertDate(element.child(2).text(), lang);
+            String user = element.child(0).text();
+            String content = element.child(1).text();
+            return new Message(user, tempDate.split(" ")[0], tempDate.split(" ")[1], content);
+        } catch (ParseException ex) {
+            throw new UnsupportedLanaguage("error"); // todo: do zmiany
         }
-    }
-
-    private static String monthNameToCalendar(String name) {
-        if (name.equals("Jan")) {
-            return "01";
-        } else if (name.equals("Feb")) {
-            return "02";
-        } else if (name.equals("Mar")) {
-            return "03";
-        } else if (name.equals("Apr")) {
-            return "04";
-        } else if (name.equals("May")) {
-            return "05";
-        } else if (name.equals("Jun")) {
-            return "06";
-        } else if (name.equals("Jul")) {
-            return "07";
-        } else if (name.equals("Aug")) {
-            return "08";
-        } else if (name.equals("Sep")) {
-            return "09";
-        } else if (name.equals("Oct")) {
-            return "10";
-        } else if (name.equals("Nov")) {
-            return "11";
-        } else if (name.equals("Dec")) {
-            return "12";
-        } else if (name.equals("sty")) { // for pl
-            return "01";
-        } else if (name.equals("lut")) {
-            return "02";
-        } else if (name.equals("mar")) {
-            return "03";
-        } else if (name.equals("kwi")) {
-            return "04";
-        } else if (name.equals("maj")) {
-            return "05";
-        } else if (name.equals("cze")) {
-            return "06";
-        } else if (name.equals("lip")) {
-            return "07";
-        } else if (name.equals("sie")) {
-            return "08";
-        } else if (name.equals("wrz")) {
-            return "09";
-        } else if (name.equals("paź")) {
-            return "10";
-        } else if (name.equals("lis")) {
-            return "11";
-        } else if (name.equals("gru")) {
-            return "12";
-        }
-
-        throw new InvalidParameterException("Value not valid: " + name);
     }
 
 
