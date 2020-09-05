@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efb63fa1-8a38-40e5-9bf9-3981db8860f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/JavaFxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/JavaFxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/FXMLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/FXMLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/slupski/analyzer/main-scene.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/slupski/analyzer/main-scene.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/slupski/analyzer/main-scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/slupski/analyzer/main-scene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -32,6 +39,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1h5pMVbaYacx4w88jzh5FQVDpLt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -51,8 +61,12 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.slupski.analyzer" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.slupski.analyzer" />
     </key>
@@ -77,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599310759544</updated>
       <workItem from="1599310773745" duration="1493000" />
-      <workItem from="1599312509043" duration="2444000" />
+      <workItem from="1599312509043" duration="8665000" />
     </task>
     <servers />
   </component>
@@ -85,50 +99,82 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Auto_Import" timestamp="1599323833507">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Auto_Import/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599323833507" />
     <state x="700" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599313157584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599313157584" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599314961826">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599325263509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599314961826">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325263509" />
+    <state width="394" height="466" key="DebuggerActiveHint" timestamp="1599316788391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599314961826">
+    <state width="394" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599316788391" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599325194331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599314961826">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599325194330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1599314961827">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194330" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599325194330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961827" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1599314961827">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194330" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599325194331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961827" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1599314961826">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1599325194331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961826" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1599314961827">
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1599325194331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599314961827" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1599325194331">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1599325194331">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1599324335120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324335120" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1599324335120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324335120" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1599324335119">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324335119" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1599324335120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324335120" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1599311717840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599311717840" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1599311107817">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1599325114719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599311107817" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325114719" />
+    <state x="521" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599324062936">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="521" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324062936" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1599314089102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -138,9 +184,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerApplication.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerService.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
