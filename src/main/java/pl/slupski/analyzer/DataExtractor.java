@@ -88,7 +88,32 @@ public class DataExtractor {
             return "11";
         } else if (name.equals("Dec")) {
             return "12";
+        } else if (name.equals("sty")) { // for pl
+            return "01";
+        } else if (name.equals("lut")) {
+            return "02";
+        } else if (name.equals("mar")) {
+            return "03";
+        } else if (name.equals("kwi")) {
+            return "04";
+        } else if (name.equals("maj")) {
+            return "05";
+        } else if (name.equals("cze")) {
+            return "06";
+        } else if (name.equals("lip")) {
+            return "07";
+        } else if (name.equals("sie")) {
+            return "08";
+        } else if (name.equals("wrz")) {
+            return "09";
+        } else if (name.equals("paź")) {
+            return "10";
+        } else if (name.equals("lis")) {
+            return "11";
+        } else if (name.equals("gru")) {
+            return "12";
         }
+
         throw new InvalidParameterException("Value not valid: " + name);
     }
 
