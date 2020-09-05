@@ -36,10 +36,11 @@ public class FXMLController {
     private ListView<File> listView;
 
     private DirectoryChooser directoryChooser = new DirectoryChooser();
+    private File selectedDirectory;
 
     @FXML
     protected void handleSelectButton(ActionEvent event) {
-        File selectedDirectory = directoryChooser.showDialog(vBoxPane.getScene().getWindow());
+        selectedDirectory = directoryChooser.showDialog(vBoxPane.getScene().getWindow());
         pathInput.setText(selectedDirectory.getAbsolutePath());
         log("Selected folder with path: " + selectedDirectory.getAbsolutePath());
         findHtmlFiles(selectedDirectory);
@@ -47,31 +48,21 @@ public class FXMLController {
 
     @FXML
     protected void handleAnalyzeButton(ActionEvent event) {
-        log("Analyzing file: " + listView.getSelectionModel().getSelectedItem().getName());
+        log("Pulling out data...");
         try {
-            analyzerService.init(listView.getSelectionModel().getSelectedItem());
-            log("Analyzing finished successfully");
+            analyzerService.init(selectedDirectory);
+            log("Data pulled out");
         } catch (IOException ex) {
-            log("Error while analyzing: " + ex.getCause());
+            log("Error while pulling data: " + ex.getCause());
         }
     }
 
     private void findHtmlFiles(File directory) {
-        FilenameFilter htmlFilter = new FilenameFilter() {
-            public boolean accept(File dir, String name) {
-                String lowercaseName = name.toLowerCase();
-                if (lowercaseName.endsWith(".html")) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-        };
-        File[] files = directory.listFiles(htmlFilter);
+        File[] files = directory.listFiles();
         ObservableList items = FXCollections.observableArrayList();
         Arrays.asList(files).forEach(file -> {
             items.add(file);
-            log("Found file: " + file);
+            log("Found file: " + file.getName());
         });
         listView.setItems(items);
     }

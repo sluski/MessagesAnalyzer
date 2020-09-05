@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efb63fa1-8a38-40e5-9bf9-3981db8860f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/DataExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/DataExtractor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/FXMLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/FXMLController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pl/slupski/analyzer/main-scene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/slupski/analyzer/main-scene.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/slupski/analyzer/main-scene.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/slupski/analyzer/main-scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/slupski/analyzer/main-scene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599310759544</updated>
       <workItem from="1599310773745" duration="1493000" />
-      <workItem from="1599312509043" duration="8665000" />
+      <workItem from="1599312509043" duration="15101000" />
     </task>
     <servers />
   </component>
@@ -107,62 +104,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599313157584" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1599331174357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599331174357" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599325263509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325263509" />
-    <state width="394" height="466" key="DebuggerActiveHint" timestamp="1599316788391">
+    <state x="512" y="274" width="1118" height="594" key="#xdebugger.evaluate" timestamp="1599331719351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="394" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599316788391" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599325194331">
+    <state x="512" y="274" width="1118" height="594" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599331719351" />
+    <state width="402" height="466" key="DebuggerActiveHint" timestamp="1599333905583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599325194330">
+    <state width="402" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599333905583" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599334031656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194330" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599325194330">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599334031656" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599334031656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194330" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599325194331">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599334031656" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599334031656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1599325194331">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599334031656" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599334031656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1599325194331">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599334031656" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1599334031657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1599325194331">
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599334031657" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1599334031656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1599325194331">
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599334031656" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1599334031656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599325194331" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1599324335120">
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599334031656" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1599334031656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324335120" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1599324335120">
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599334031656" />
+    <state width="1877" height="298" key="GridCell.Tab.2.bottom" timestamp="1599333974543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324335120" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1599324335119">
+    <state width="1877" height="298" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599333974543" />
+    <state width="1877" height="298" key="GridCell.Tab.2.center" timestamp="1599333974543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324335119" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1599324335120">
+    <state width="1877" height="298" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599333974543" />
+    <state width="1877" height="298" key="GridCell.Tab.2.left" timestamp="1599333974543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599324335120" />
+    <state width="1877" height="298" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599333974543" />
+    <state width="1877" height="298" key="GridCell.Tab.2.right" timestamp="1599333974543">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599333974543" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1599311717840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,9 +189,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerService.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="6" />
+          <line>21</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/slupski/analyzer/AnalyzerService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

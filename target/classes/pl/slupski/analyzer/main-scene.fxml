@@ -7,19 +7,19 @@
 <?import javafx.scene.text.Font?>
 <VBox fx:id="vBoxPane"
       fx:controller="pl.slupski.analyzer.FXMLController" spacing="10"
-      xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" minWidth="450" minHeight="400">
+      xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" minWidth="550" minHeight="500">
     <padding>
         <Insets top="25" right="25" bottom="20" left="25"/>
     </padding>
 
     <HBox fx:id="directorySelectBox" spacing="5" alignment="CENTER">
         <Label text="Path to folder:"/>
-        <TextField fx:id="pathInput" GridPane.fillWidth="true" prefWidth="250"/>
+        <TextField fx:id="pathInput" GridPane.fillWidth="true" prefWidth="250" editable="false"/>
         <Button text="Select" onAction="#handleSelectButton"/>
     </HBox>
 
     <Label text="Available files"/>
-    <ListView fx:id="listView" prefHeight="100.0"/>
+    <ListView fx:id="listView" prefHeight="200.0"/>
     <Button text="Analyze" onAction="#handleAnalyzeButton" prefWidth="100">
         <Font size="30"/>
     </Button>

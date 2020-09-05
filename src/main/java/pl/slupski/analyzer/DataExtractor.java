@@ -11,17 +11,33 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 public class DataExtractor {
 
-    public static List<Message> extractMessages(File file) throws IOException {
-        Document doc = Jsoup.parse(file, "UTF-8");
-        return extractData(doc);
+    public static Conversation extractConversation(File file) throws IOException {
+        Conversation result = null;
+        Document doc;
+        for (File f : file.listFiles()) {
+            if (f.getName().endsWith(".html")) {
+                doc = Jsoup.parse(f, "UTF-8");
+                String recipient = doc.select("._3b0c").get(0).text();
+                ConversationType type = checkConversationType(doc);
+                result = new Conversation(UUID.randomUUID().toString(), recipient, type);
+                result.getMessages().addAll(extractData(doc));
+            }
+        }
+        return result;
+    }
+
+    private static ConversationType checkConversationType(Document doc) {
+        return doc.select(".pam").get(0).children().size() == 3 ? ConversationType.DIRECT : ConversationType.GROUP; //if first element contains only two children its mean its group
     }
 
     private static List<Message> extractData(Document doc) {
         List<Element> elements = doc.select(".pam");
+        if (elements.get(0).text().contains(",")) elements = elements.subList(1, elements.size());
         return elements.stream().map(element -> prepareMessage(element)).collect(Collectors.toList());
     }
 

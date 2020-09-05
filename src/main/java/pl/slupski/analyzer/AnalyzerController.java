@@ -19,8 +19,8 @@ public class AnalyzerController {
         return "Messages Analyzer v1.0.0";
     }
 
-    @GetMapping("/messages")
-    public List<Message> getAllMessages() {
-        return analyzerService.findAll();
+    @GetMapping("/recipients")
+    public List<Recipient> findAllRecipients() {
+        return analyzerService.findAllRecipients();
     }
 }

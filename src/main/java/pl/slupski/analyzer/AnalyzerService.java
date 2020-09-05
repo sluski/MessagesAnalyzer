@@ -4,20 +4,25 @@ import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class AnalyzerService {
 
-    private List<Message> messages;
+    private List<Conversation> conversations = new ArrayList<>();
 
     public void init(File file) throws IOException {
-        this.messages = DataExtractor.extractMessages(file);
-        int i = 2;
+        for (File f : file.listFiles()) {
+            if (f.isDirectory()) conversations.add(DataExtractor.extractConversation(f));
+        }
     }
 
-    public List<Message> findAll() {
-        return messages;
+    public List<Recipient> findAllRecipients() {
+        List<Recipient> result = new ArrayList<>();
+        conversations.forEach(conversation -> {
+            result.add(new Recipient(conversation.getId(), conversation.getRecipient(), conversation.getType(), conversation.getMessages().size()));
+        });
+        return result;
     }
-
 }
