@@ -15,6 +15,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -52,7 +53,7 @@ public class FXMLController {
         try {
             analyzerService.init(selectedDirectory);
             log("Data pulled out");
-        } catch (IOException ex) {
+        } catch (IOException | ParseException ex) {
             log("Error while pulling data: " + ex.getCause());
         }
     }

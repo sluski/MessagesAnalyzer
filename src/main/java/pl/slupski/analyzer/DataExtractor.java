@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 public class DataExtractor {
 
-    public static Conversation extractConversation(File file) throws IOException {
+    public static Conversation extractConversation(File file) throws IOException, ParseException {
         Conversation result = null;
         Document doc;
         for (File f : file.listFiles()) {
@@ -27,6 +27,7 @@ public class DataExtractor {
                 ConversationType type = checkConversationType(doc);
                 result = new Conversation(UUID.randomUUID().toString(), recipient, type);
                 result.getMessages().addAll(extractData(doc));
+                result.initDays();
             }
         }
         return result;

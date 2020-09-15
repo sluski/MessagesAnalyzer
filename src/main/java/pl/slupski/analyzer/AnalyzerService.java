@@ -4,25 +4,29 @@ import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.text.ParseException;
+import java.util.*;
 
 @Service
 public class AnalyzerService {
 
-    private List<Conversation> conversations = new ArrayList<>();
+    private final List<Conversation> conversations = new ArrayList<>();
 
-    public void init(File file) throws IOException {
+    
+    public void init(File file) throws IOException, ParseException {
         for (File f : file.listFiles()) {
-            if (f.isDirectory()) conversations.add(DataExtractor.extractConversation(f));
+            if (f.isDirectory()) {
+                Conversation conversation = DataExtractor.extractConversation(f);
+                if(Objects.nonNull(conversation)) conversations.add(conversation);
+            }
         }
     }
 
     public List<Recipient> findAllRecipients() {
         List<Recipient> result = new ArrayList<>();
-        conversations.forEach(conversation -> {
-            result.add(new Recipient(conversation.getId(), conversation.getRecipient(), conversation.getType(), conversation.getMessages().size()));
-        });
+        conversations.forEach(conversation ->
+            result.add(new Recipient(conversation.getId(), conversation.getRecipient(), conversation.getType(), conversation.getMessages().size()))
+        );
         return result;
     }
 }
