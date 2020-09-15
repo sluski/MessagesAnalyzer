@@ -1,7 +1,6 @@
 package pl.slupski.analyzer;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
 @Getter
 public class DayInfo {
