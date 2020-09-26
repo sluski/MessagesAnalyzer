@@ -13,7 +13,6 @@ public class AnalyzerService {
 
     private final List<Conversation> conversations = new ArrayList<>();
 
-
     public void init(File file) throws IOException, ParseException {
         if (file.exists()) {
             for (File f : file.listFiles()) {
@@ -30,7 +29,7 @@ public class AnalyzerService {
     public List<Recipient> findAllRecipients() {
         List<Recipient> result = new ArrayList<>();
         conversations.forEach(conversation ->
-                result.add(new Recipient(conversation.getId(), conversation.getRecipient(), conversation.getType(), conversation.getMessages().size()))
+                result.add(new Recipient(conversation.getId(), conversation.getRecipient(), conversation.getType()))
         );
         return result;
     }

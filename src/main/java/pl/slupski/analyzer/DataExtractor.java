@@ -26,8 +26,7 @@ public class DataExtractor {
                 String recipient = doc.select("._3b0c").get(0).text();
                 ConversationType type = checkConversationType(doc);
                 result = new Conversation(UUID.randomUUID().toString(), recipient, type);
-                result.getMessages().addAll(extractData(doc));
-                result.initDays();
+                result.initDays(extractData(doc));
             }
         }
         return result;
