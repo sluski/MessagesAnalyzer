@@ -1,22 +1,15 @@
 package pl.slupski.analyzer;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Getter
+@RequiredArgsConstructor
 public class Day {
-    private final long dateId;
-    private final List<Message> messages;
-
-    public Day(long dateId) {
-        this.dateId = dateId;
-        this.messages = new ArrayList<>();
-    }
-
-    public void addMessage(Message message) {
-        this.messages.add(message);
-    }
+    private final int dayOfMonth;
+    private List<Message> messages = new ArrayList<>();
 
 }

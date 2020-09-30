@@ -1,5 +1,7 @@
 package pl.slupski.analyzer;
 
+import pl.slupski.analyzer.execption.UnsupportedLanguageException;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,7 +12,7 @@ public class RegionalDateConverter {
     public static String convertDate(String date, String lang) throws ParseException {
         if (lang.equals("en")) return enConvertDate(date);
         else if (lang.equals("pl")) return plConvertDate(date);
-        throw new UnsupportedLanaguage("Language is not supported: " + lang);
+        throw new UnsupportedLanguageException("Language is not supported: " + lang);
     }
 
     private static String enConvertDate(String date) throws ParseException {

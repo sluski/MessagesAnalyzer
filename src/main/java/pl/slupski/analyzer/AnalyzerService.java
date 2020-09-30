@@ -4,26 +4,20 @@ import org.springframework.stereotype.Service;
 import pl.slupski.analyzer.execption.InvalidDirectoryPathException;
 
 import java.io.File;
-import java.io.IOException;
-import java.text.ParseException;
 import java.util.*;
 
 @Service
 public class AnalyzerService {
 
-    private final List<Conversation> conversations = new ArrayList<>();
+    private List<Conversation> conversations;
 
-    public void init(File file) throws IOException, ParseException {
-        if (file.exists()) {
-            for (File f : file.listFiles()) {
-                if (f.isDirectory()) {
-                    Conversation conversation = DataExtractor.extractConversation(f);
-                    if (Objects.nonNull(conversation)) conversations.add(conversation);
-                }
-            }
-        } else {
-            throw new InvalidDirectoryPathException("Invalid path to root folder: " + file.getAbsolutePath());
-        }
+    public void init(File file) {
+        DataExtractor extractor = new DataExtractor(file);
+        conversations = extractor.prepareConversations();
+    }
+
+    public List<Conversation> findConversations() {
+        return conversations;
     }
 
     public List<Recipient> findAllRecipients() {
@@ -33,4 +27,5 @@ public class AnalyzerService {
         );
         return result;
     }
+
 }

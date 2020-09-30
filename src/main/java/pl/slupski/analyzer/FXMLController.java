@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
 import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -36,36 +37,22 @@ public class FXMLController {
     @FXML
     private ListView<File> listView;
 
-    private DirectoryChooser directoryChooser = new DirectoryChooser();
+    private FileChooser directoryChooser = new FileChooser();
     private File selectedDirectory;
 
     @FXML
     protected void handleSelectButton(ActionEvent event) {
-        selectedDirectory = directoryChooser.showDialog(vBoxPane.getScene().getWindow());
+        selectedDirectory = directoryChooser.showOpenDialog(vBoxPane.getScene().getWindow());
         pathInput.setText(selectedDirectory.getAbsolutePath());
         log("Selected folder with path: " + selectedDirectory.getAbsolutePath());
-        findHtmlFiles(selectedDirectory);
     }
 
     @FXML
     protected void handleAnalyzeButton(ActionEvent event) {
-        log("Pulling out data...");
-        try {
-            analyzerService.init(selectedDirectory);
-            log("Data pulled out");
-        } catch (IOException | ParseException ex) {
-            log("Error while pulling data: " + ex.getCause());
-        }
-    }
-
-    private void findHtmlFiles(File directory) {
-        File[] files = directory.listFiles();
-        ObservableList items = FXCollections.observableArrayList();
-        Arrays.asList(files).forEach(file -> {
-            items.add(file);
-            log("Found file: " + file.getName());
-        });
-        listView.setItems(items);
+        System.out.println("Analyzing...");
+        analyzerService.init(selectedDirectory);
+        System.out.println("Analyzed!");
+        log("Data pulled out");
     }
 
     private void log(String log) {

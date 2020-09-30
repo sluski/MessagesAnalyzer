@@ -23,4 +23,9 @@ public class AnalyzerController {
     public List<Recipient> findAllRecipients() {
         return analyzerService.findAllRecipients();
     }
+
+    @GetMapping("/conversations")
+    public List<Conversation> findAllConversations() {
+        return analyzerService.findConversations();
+    }
 }
